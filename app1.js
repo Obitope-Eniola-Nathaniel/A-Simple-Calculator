@@ -28,3 +28,21 @@ button.forEach((item) => {
         display.value += item.innerText        
     })
 })
+
+
+ // Toggles visibility of greeting
+ function blink()
+ {
+     let body = document.querySelector('.name');
+     if (body.style.visibility == 'hidden')
+     {
+         body.style.visibility = 'visible';
+     }
+     else
+     {
+         body.style.visibility = 'hidden';
+     }
+ }
+
+ // Blink every 500ms
+ window.setInterval(blink, 1000);
