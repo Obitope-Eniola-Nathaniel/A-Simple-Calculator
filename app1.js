@@ -12,7 +12,6 @@ let button = document.querySelectorAll(".btn")
 
 button.forEach((item) => {
     item.addEventListener("click",() => {
-        sound1.play()
         if(item.innerText === "="){            
             try{                
                 let result = parseFloat(eval(display.value))          
